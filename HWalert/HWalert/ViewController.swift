@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 //        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
 //         
 //        self.present(alert, animated: true)
-        
+//        
         //кастомный алерт
         customAlert.showAlert(title: "Would you like to eat pizza?", message: "Pepperoni.", viewController: self)
         
