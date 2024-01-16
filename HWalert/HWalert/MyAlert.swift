@@ -38,6 +38,7 @@ class MyAlert {
         targetView.addSubview(backgroundView)
         
         alertView.frame = CGRect(x: 40, y: 300, width: targetView.frame.width - 80 , height: 300)
+        alertView.layer.cornerRadius = 20
         targetView.addSubview(alertView)
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 80, width: alertView.frame.width, height: 80))
@@ -52,15 +53,29 @@ class MyAlert {
         messageLabel.textAlignment = .center
         alertView.addSubview(messageLabel)
         
-        let buttonAlert = UIButton(frame: CGRect(x: 200, y: 300, width: 80, height: 40))
+        let buttonAlert = UIButton(frame: CGRect(x: 30 , y: 220, width: 80, height: 60))
         buttonAlert.setTitle("GOT IT", for: .normal)
-        buttonAlert.backgroundColor = .systemBlue
-        buttonAlert.translatesAutoresizingMaskIntoConstraints = false
+        buttonAlert.backgroundColor = .systemGreen
+       // buttonAlert.translatesAutoresizingMaskIntoConstraints = false
         alertView.addSubview(buttonAlert)
         buttonAlert.addTarget(self, action: #selector(dismissAlert), for: .touchUpInside)
+        
+        let buttonAlert1 = UIButton(frame: CGRect(x: 180 , y: 220, width: 100, height: 60))
+        buttonAlert1.setTitle("NO PIZZA", for: .normal)
+        buttonAlert1.backgroundColor = .systemRed
+      //  buttonAlert1.translatesAutoresizingMaskIntoConstraints = false
+        alertView.addSubview(buttonAlert1)
+        buttonAlert1.addTarget(self, action: #selector(dismissAlert1), for: .touchUpInside)
     }
     
     @objc func dismissAlert() {
+        print("Pizza time")
+        backgroundView.removeFromSuperview()
+        alertView.removeFromSuperview()
+        
+    }
+    @objc func dismissAlert1() {
+        print("No pizza")
         backgroundView.removeFromSuperview()
         alertView.removeFromSuperview()
         
