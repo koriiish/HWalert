@@ -15,6 +15,7 @@
 		A725A17A2B56C4A0001C243D /* HWAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A1792B56C4A0001C243D /* HWAlertTests.swift */; };
 		A725A1842B56C4A0001C243D /* HWAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A1832B56C4A0001C243D /* HWAlertUITests.swift */; };
 		A725A1862B56C4A0001C243D /* HWAlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A1852B56C4A0001C243D /* HWAlertUITestsLaunchTests.swift */; };
+		A725A1932B56CCEE001C243D /* MyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A1922B56CCEE001C243D /* MyAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A725A17F2B56C4A0001C243D /* HWAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A725A1832B56C4A0001C243D /* HWAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAlertUITests.swift; sourceTree = "<group>"; };
 		A725A1852B56C4A0001C243D /* HWAlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWAlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A725A1922B56CCEE001C243D /* MyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A725A1622B56C49F001C243D /* AppDelegate.swift */,
 				A725A1642B56C49F001C243D /* SceneDelegate.swift */,
 				A725A1662B56C49F001C243D /* ViewController.swift */,
+				A725A1922B56CCEE001C243D /* MyAlert.swift */,
 				A725A16B2B56C4A0001C243D /* Assets.xcassets */,
 				A725A16D2B56C4A0001C243D /* LaunchScreen.storyboard */,
 				A725A1702B56C4A0001C243D /* Info.plist */,
@@ -256,6 +259,7 @@
 			files = (
 				A725A1672B56C49F001C243D /* ViewController.swift in Sources */,
 				A725A1632B56C49F001C243D /* AppDelegate.swift in Sources */,
+				A725A1932B56CCEE001C243D /* MyAlert.swift in Sources */,
 				A725A1652B56C49F001C243D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

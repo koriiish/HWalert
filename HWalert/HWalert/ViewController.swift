@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let customAlert = MyAlert()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,13 +32,18 @@ class ViewController: UIViewController {
     }
 
     @objc func myButtonTapped() {
-      //  print("tap")
-        let alert = UIAlertController(title: "Would you like to eat pizza for dinner?", message: "Pepperoni with extra cheese.", preferredStyle: .alert)
-         
-        alert.addAction(UIAlertAction(title: "Yes, got it", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-         
-        self.present(alert, animated: true)
+      // классический ios алерт
+        
+//        let alert = UIAlertController(title: "Would you like to eat pizza for dinner?", message: "Pepperoni with extra cheese.", preferredStyle: .alert)
+//         
+//        alert.addAction(UIAlertAction(title: "Yes, got it", style: .default, handler: nil))
+//        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+//         
+//        self.present(alert, animated: true)
+        
+        //кастомный алерт
+        customAlert.showAlert(title: "Would you like to eat pizza?", message: "Pepperoni.", viewController: self)
+        
     }
 }
 
